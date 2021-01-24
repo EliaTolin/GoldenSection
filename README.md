@@ -1,16 +1,28 @@
-# GoldenSection
+# GoldenSection Φ
 
-A new Flutter project.
+The perfect tool for any graphics designer and architectural designer. Calculate fast the golden ration and recaive information about that.
 
-## Getting Started
+## Why a app for a simple calculation? ϕ
 
-This project is a starting point for a Flutter application.
+The Golden Section it's the perfect ratio of two parts in one line.
+The nature use golden ratio for draw the pattern. 
+Da Vinci use the ratio for draw the Mona Lisa.
+The Golden Ration it's Harmony. It's perfect match of two parts.
 
-A few resources to get you started if this is your first Flutter project:
+## How use Golden Section? ϕ
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+If you are an architect or designer or you are looking for a perfect relationship for a drawing, a photo or whatever. This app is for you. Any relationship between two sides has the golden ratio as its relationship.
+This app can help you with any design. Each commercial logo has a golden ratio in its design. I advise you to deepen on google!
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Feature ϕ
+
+Calcute golden ration from one part. 
+
+## Next Feature ϕ 
+
+History calculate. 
+Insights about the golden section.
+
+- [Golden Section](https://en.wikipedia.org/wiki/Golden_ratio)
+
+mail@eliatolin.it
