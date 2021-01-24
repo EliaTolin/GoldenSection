@@ -103,7 +103,7 @@ class _HomePage_State extends State<HomePage> {
               child: Container(
                 alignment: Alignment.bottomCenter,
                 child: Text(
-                  "Stack Over Flow",
+                  "Golden Section",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 30,
