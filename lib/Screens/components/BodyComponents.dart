@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 Container bottom(Size size) {
   double totalElement = size.width / 3;
   return Container(
-    height: size.width * GS.kHeightRatio,
+    height: size.width * GS.kHeightBarRatio,
     //color: GS.mainColor,
     child: Stack(
       alignment: Alignment.bottomLeft,
@@ -44,7 +44,7 @@ Column buildTopBar(Size size, String title) {
         alignment: Alignment.center,
         children: <Widget>[
           Container(
-              height: size.height * GS.kHeightRatio,
+              height: size.height * GS.kHeightBarRatio,
               decoration: BoxDecoration(
                 color: GS.mainColor,
                 borderRadius: BorderRadius.only(
@@ -80,18 +80,42 @@ AppBar buildAppBar() {
   );
 }
 
+TextField textFieldElement(String label,Color color) {
+  return TextField(
+    decoration: InputDecoration(
+      hintText: label,
+      hintStyle: TextStyle(
+        color: color,
+        fontFamily: 'ChristopherDone',
+        fontSize: 30,
+      ),
+      enabledBorder: InputBorder.none,
+      focusedBorder: InputBorder.none,
+      alignLabelWithHint: true,
+    ),
+    style: TextStyle(
+      color: color,
+      fontFamily: 'ChristopherDone',
+      fontSize: 30,
+    ),
+    textAlign: TextAlign.center,
+    autocorrect: false,
+    showCursor: false,
+  );
+}
+
 class TopBar extends StatelessWidget implements PreferredSizeWidget {
   final String title;
   final Widget child;
   final Function onPressed;
   final Function onTitleTapped;
-  final Size size; 
+  final Size size;
   @override
   final Size preferredSize;
 
   TopBar(this.size,
       {@required this.title, this.child, this.onPressed, this.onTitleTapped})
-      : preferredSize = Size.fromHeight(size.height*GS.kHeightRatio);
+      : preferredSize = Size.fromHeight(size.height * GS.kHeightBarRatio);
 
   @override
   Widget build(BuildContext context) {
