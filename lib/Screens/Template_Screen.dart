@@ -4,8 +4,10 @@ import 'package:GoldenSection/constants.dart';
 import 'package:GoldenSection/Screens/components/BodyComponents.dart';
 
 class HomePage extends StatefulWidget {
+  // IMPLEMENT IMPLEMENT IMPLEMENT
   static const routeName = "/";
-
+  // IMPLEMENT IMPLEMENT IMPLEMENT
+  
   final String title;
   HomePage({this.title, Key key}) : super(key: key);
 

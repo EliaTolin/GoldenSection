@@ -9,11 +9,12 @@ abstract class GS {
   static const firstElementColor = Color(0xFF6E0E0A);
   static const secondElementColor = Color(0xFFD74E09);
   static const thirdElementColor = Color(0xFFF2BB05);
-  static const textColor = Colors.black;
+  static const textColor = Colors.white;
 
   //RADIUS
   static const double radiusComponent = 40;
   //SIZE ELEMENT
   static const double heightBottomElement = 50;
   static const double kDefaultPadding = 16;
+  static const double kHeightRatio = 0.15;
 }
