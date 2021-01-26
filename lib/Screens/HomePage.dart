@@ -16,19 +16,19 @@ class HomePage extends StatefulWidget {
 
 // ignore: camel_case_types
 class _HomePage_State extends State<HomePage> {
-  
   final GlobalKey _keyAB = GlobalKey();
-  Size sizeInternalBody;
+  Size sizeInternalBody = Size(0,0);
 
   @override
   void initState() {
     super.initState();
-    WidgetsBinding.instance.addPersistentFrameCallback((_) => getSize());
+     WidgetsBinding.instance.addPersistentFrameCallback((_) => getSize());
   }
 
   void getSize() {
     RenderBox _box = _keyAB.currentContext.findRenderObject();
     sizeInternalBody = _box.size;
+    setState(() {});
   }
 
   @override
@@ -85,6 +85,4 @@ class _HomePage_State extends State<HomePage> {
       bottomNavigationBar: bottom(size),
     );
   }
-
-
 }
