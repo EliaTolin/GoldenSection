@@ -7,7 +7,7 @@ class HomePage extends StatefulWidget {
   // IMPLEMENT IMPLEMENT IMPLEMENT
   static const routeName = "/";
   // IMPLEMENT IMPLEMENT IMPLEMENT
-  
+
   final String title;
   HomePage({this.title, Key key}) : super(key: key);
 
@@ -21,13 +21,11 @@ class _HomePage_State extends State<HomePage> {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: TopBar(size, title: "Golden Section"),
-      backgroundColor: GS.backColor,
+      backgroundColor: GSConst.backColor,
       body: Column(
-        children: <Widget>[
-        ],
+        children: <Widget>[],
       ),
       bottomNavigationBar: bottom(size),
     );
   }
-
 }

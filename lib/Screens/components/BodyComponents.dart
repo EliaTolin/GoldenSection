@@ -1,23 +1,24 @@
 import 'package:GoldenSection/constants.dart';
+import 'package:GoldenSection/models/g_section.dart';
 import 'package:flutter/material.dart';
 
 Container bottom(Size size) {
   double totalElement = size.width / 3;
   return Container(
-    height: size.width * GS.kHeightBarRatio,
-    //color: GS.mainColor,
+    height: size.width * GSConst.kHeightBarRatio,
+    //color: GSConst.mainColor,
     child: Stack(
       alignment: Alignment.bottomLeft,
       children: [
         //THIRD ELEMENT
-        bottomElement(
-            GS.thirdElementColor, totalElement * 3, GS.heightBottomElement),
+        bottomElement(GSConst.thirdElementColor, totalElement * 3,
+            GSConst.heightBottomElement),
         //SECOND ELEMENT
-        bottomElement(
-            GS.secondElementColor, totalElement * 2, GS.heightBottomElement),
+        bottomElement(GSConst.secondElementColor, totalElement * 2,
+            GSConst.heightBottomElement),
         //FIRST ELEMENT
-        bottomElement(
-            GS.firstElementColor, totalElement, GS.heightBottomElement),
+        bottomElement(GSConst.firstElementColor, totalElement,
+            GSConst.heightBottomElement),
       ],
     ),
   );
@@ -44,12 +45,12 @@ Column buildTopBar(Size size, String title) {
         alignment: Alignment.center,
         children: <Widget>[
           Container(
-              height: size.height * GS.kHeightBarRatio,
+              height: size.height * GSConst.kHeightBarRatio,
               decoration: BoxDecoration(
-                color: GS.mainColor,
+                color: GSConst.mainColor,
                 borderRadius: BorderRadius.only(
-                  bottomLeft: Radius.circular(GS.radiusComponent),
-                  bottomRight: Radius.circular(GS.radiusComponent),
+                  bottomLeft: Radius.circular(GSConst.radiusComponent),
+                  bottomRight: Radius.circular(GSConst.radiusComponent),
                 ),
               )),
           Positioned(
@@ -62,7 +63,7 @@ Column buildTopBar(Size size, String title) {
                   fontWeight: FontWeight.bold,
                   fontSize: 30,
                   //fontFamily: 'ChristopherDone',
-                  color: GS.textColor,
+                  color: GSConst.textColor,
                 ),
               ),
             ),
@@ -76,14 +77,15 @@ Column buildTopBar(Size size, String title) {
 AppBar buildAppBar() {
   return AppBar(
     elevation: 0,
-    backgroundColor: GS.pinkPastel,
+    backgroundColor: GSConst.pinkPastel,
   );
 }
 
-TextField textFieldElement(String label,Color color) {
+TextField textFieldElement(
+    String label, Color color, TextEditingController ctr, GoldenSection gs) {
   return TextField(
     decoration: InputDecoration(
-      hintText: label,
+      hintText: ctr.text,
       hintStyle: TextStyle(
         color: color,
         fontFamily: 'ChristopherDone',
@@ -115,7 +117,7 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
 
   TopBar(this.size,
       {@required this.title, this.child, this.onPressed, this.onTitleTapped})
-      : preferredSize = Size.fromHeight(size.height * GS.kHeightBarRatio);
+      : preferredSize = Size.fromHeight(size.height * GSConst.kHeightBarRatio);
 
   @override
   Widget build(BuildContext context) {

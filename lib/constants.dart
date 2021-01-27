@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 //GOLDEN SECTION CONSTANTS:
-abstract class GS {
+abstract class GSConst {
   //COLOR
   static const mainColor = Colors.orange;
   static const backColor = Colors.white30;
