@@ -20,4 +20,7 @@ abstract class GSConst {
   static const double kHeightElementRatio = 0.10;
   static const double sizeA = 0.618;
   static const double sizeB = 0.382;
+
+  //PHI
+  static const double goldenRatio = 1.618;
 }
